@@ -110,22 +110,7 @@ class scriptClass {
 
         return $record;
     }
-	 public function insertdetails($userid,$lat, $long,$description, $time) {
-        $password = md5($password);
-        $sql = "Insert 
-                INTO 
-                    complains(`Complain_id`,`userid`,Lat`,`lon`,`description`, )
 
-                VALUES
-
-                ('','{$userid}','{$lat}','{$long}','{$description}')"; 
-        if (!$data = mysql_query($sql)) {
-
-            die('Error: ' . mysqli_error());
-        }
-
-        return mysql_insert_id();
-    }
 
 }
 ?>
